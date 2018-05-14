@@ -1,0 +1,606 @@
+﻿@{
+    ViewBag.Title = "Universidad Tecnológica de la Habana Jose Antonio Echeverria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+  @section body
+      {
+       <main class="site-content" role="main">
+
+  
+    <section id="home-slider">
+        <div id="slider" class="sl-slider-wrapper">
+
+            <div class="sl-slider">
+
+                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+
+                    <div class="bg-img bg-img-1"></div>
+
+                    <div class="slide-caption">
+                        <div class="caption-content">
+                            <h2 style="margin-top:30%" class="animated fadeInDown">Universidad Tecnológica de La Habana<br/> 
+                            &ldquo;Jos&eacute; Antonio Echeverr&iacute;a&ldquo;</h2>
+                            <span class="animated fadeInDown bordercaption">Cinco d&eacute;cadas en la formaci&oacute;n de profesionales</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+
+                    <div class="bg-img bg-img-2"></div>
+                    <div class="slide-caption">
+                        <div  style="margin-top:10%"class="caption-content">
+                            <h2  style="margin-top:34%;margin-left:30%; color: #f8eeee;" class="animated fadeInDown">Universidad de excelencia</h2>
+                            <span class="animated fadeInDown bordercaption">Altos resultados en la formaci&oacute;n  integral, las investigaciones y su impacto en la naci&oacute;n y el exterior</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+
+                    <div class="bg-img bg-img-3"></div>
+                    <div class="slide-caption">
+                        <div class="caption-content">
+                            <h2 style="margin-top:30%">Juegos Deportivos 13 de Marzo</h2>
+                            <span class="animated fadeInDown bordercaption">El deporte un derecho de nuestros j&oacute;venes universitarios</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- /sl-slider -->
+
+            <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                <a href="javascript:;" class="sl-prev">
+                    <i class="fa fa-angle-left fa-3x"></i>
+                </a>
+                <a href="javascript:;" class="sl-next">
+                    <i class="fa fa-angle-right fa-3x"></i>
+                </a>
+            </nav>
+
+
+            <nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+                <span class="nav-dot-current"></span>
+                <span></span>
+                <span></span>
+            </nav>
+
+        </div><!-- /slider-wrapper -->
+    </section>
+    
+           <section id="event">
+               <div class="container">
+                   <div class="row">
+
+                       <div class="sec-title text-center">
+                           <h2 class="wow animated bounceInLeft">
+                               Eventos
+                               @Html.ActionLink(" ", "Eventos", "Home", null, new { @class = "fa fa-plus-circle evento" })
+                           </h2>
+
+                       </div>
+                       <div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                           <div class="service-item">
+                               <img src="~/Content/Home/img/pageHeaderTitleImage_es_ES.jpg" class="resaltar img-thumbnail " />
+                               <h3 class="texH3"> XIX Convención Científica de Ingeniería y Arquitectura</h3>
+                           </div>
+                       </div>
+
+                       <div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+                           <div class="service-item">
+                               <img src="~/Content/Home/img/homepageImage_es_ES.jpg" class="resaltar img-thumbnail " />
+                               <h3 class="textH3">X Congreso Cubano de Ingeniería Mecánica y Metalúrgica (CCIM 2018)</h3>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+                           <div class="service-item ">
+                               <img src="~/Content/Home/img/defect-event.png" class="resaltar img-thumbnail " />
+                               <h3>Conferencia Internacional sobre Tecnologías aplicadas a las Redes Eléctricas Inteligentes (CITREI 2018)</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
+           <section id="about">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-10 wow animated fadeInLeft">
+                           <div class="sec-title text-center">
+                               <h2 class="animated fadeInDown textcolor">
+                                   Noticias
+                                   @Html.ActionLink(" ", "Noticias", "Home", null, new { @class = "fa fa-plus-circle evento" })
+                               </h2>
+                               <div class="textcolor"  id="works">
+                                   <div class="animated fadeInRight work-item">
+                                       <div id="morecsspure">
+                                           <input id="morecsspure-element-toggle" type="checkbox" />
+                                           <div id="morecsspure-abstract">
+                                               <div class="container-fluid">
+                                                   <div class="row">
+                                                       <div class="col-md-4">
+                                                           <img src="~/Content/Home/img/noticia.jpg" alt="..." class="img-thumbnail">
+                                                       </div>
+                                                       <div class="col-md-offset-4">
+                                                           <p class="text">La Universidad Tecnológica de La Habana, “José Antonio Echeverría”, Cujae, desarrolla un nuevo proyecto de colaboración con la Universidad Técnica de Manabí en Ecuador, para la creación de la carrera de Ingeniería en Telecomunicaciones. El proyecto responde a la necesidad de crear profesionales más capacitados de manera adecuada, para hacer frente a las exigencias del mundo moderno en materia de telecomunicaciones. </p>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div id="morecsspure-toggled-element">
+                                               <div class="container-fluid">
+                                                   <div class="row">
+                                                       <div class="col-md-4">
+                                                           <img src="~/Content/Home/img/noticia.jpg" alt="..." class="img-thumbnail">
+                                                       </div>
+                                                       <div class="col-md-offset-4">
+                                                           <p class="text">
+                                                               La Universidad Tecnológica de La Habana, “José Antonio Echeverría”, Cujae, desarrolla un nuevo proyecto de colaboración con la Universidad Técnica de Manabí en Ecuador, para la creación de la carrera de Ingeniería en Telecomunicaciones.
+                                                               El proyecto responde a la necesidad de crear profesionales más capacitados de manera adecuada, para hacer frente a las exigencias del mundo moderno en materia de telecomunicaciones.
+                                                               El decano de la Facultad de Telecomunicaciones y Electrónica, de nuestra Universidad, doctor Jorge Torres Gómez explicó en una entrevista concedida sobre el tema, que se están trasladando nuestras experiencias en relación a cómo se imparte y organiza el proceso docente en esa carrera, con el fin de readecuarla a la Universidad Técnica de Manabí.
+                                                               El proyecto pretende facilitar una nueva alternativa para los bachilleres manabitas que hasta el momento han tenido que viajar a otras ciudades del país para estudiar esa carrera.
+                                                           </p>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <label for="morecsspure-element-toggle" id="morecsspure-trigger-toggle"><span style="margin-left: 650px" class="morecsspure-morelink">Leer mas</span><span style="margin-left: 650px;margin-top:10px;" class="morecsspure-lesslink">Leer menos</span></label>
+                                       </div>
+                                   </div>
+                                   <div class=" animated fadeInRight work-item">
+                                       <div id="morecsspure">
+                                           <input id="morecsspure-element-toggle" type="checkbox" />
+                                           <div id="morecsspure-abstract">
+                                               <div class="container-fluid">
+                                                   <div class="row">
+                                                       <div class="col-md-4">
+                                                           <img src="~/Content/Home/img/noticia.jpg" alt="..." class="img-thumbnail">
+                                                       </div>
+                                                       <div class="col-md-offset-4">
+                                                           <p class="text">La Universidad Tecnológica de La Habana, “José Antonio Echeverría”, Cujae, desarrolla un nuevo proyecto de colaboración con la Universidad Técnica de Manabí en Ecuador, para la creación de la carrera de Ingeniería en Telecomunicaciones. El proyecto responde a la necesidad de crear profesionales más capacitados de manera adecuada, para hacer frente a las exigencias del mundo moderno en materia de telecomunicaciones. </p>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div id="morecsspure-toggled-element">
+                                               <div class="container-fluid">
+                                                   <div class="row">
+                                                       <div class="col-md-4">
+                                                           <img src="~/Content/Home/img/noticia.jpg" alt="..." class="img-thumbnail">
+                                                       </div>
+                                                       <div class="col-md-offset-4">
+                                                           <p class="text">
+                                                               La Universidad Tecnológica de La Habana, “José Antonio Echeverría”, Cujae, desarrolla un nuevo proyecto de colaboración con la Universidad Técnica de Manabí en Ecuador, para la creación de la carrera de Ingeniería en Telecomunicaciones.
+                                                               El proyecto responde a la necesidad de crear profesionales más capacitados de manera adecuada, para hacer frente a las exigencias del mundo moderno en materia de telecomunicaciones.
+                                                               El decano de la Facultad de Telecomunicaciones y Electrónica, de nuestra Universidad, doctor Jorge Torres Gómez explicó en una entrevista concedida sobre el tema, que se están trasladando nuestras experiencias en relación a cómo se imparte y organiza el proceso docente en esa carrera, con el fin de readecuarla a la Universidad Técnica de Manabí.
+                                                               El proyecto pretende facilitar una nueva alternativa para los bachilleres manabitas que hasta el momento han tenido que viajar a otras ciudades del país para estudiar esa carrera.
+                                                           </p>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <label for="morecsspure-element-toggle" id="morecsspure-trigger-toggle"><span style="margin-left: 650px" class="morecsspure-morelink">Leer mas</span><span style="margin-left: 650px;margin-top:10px;" class="morecsspure-lesslink">Leer menos</span></label>
+                                       </div>
+                                   </div>
+                                   <div class="animated fadeInRight work-item">
+                                       <div id="morecsspure">
+                                           <input id="morecsspure-element-toggle" type="checkbox" />
+                                           <div id="morecsspure-abstract">
+                                               <div class="container-fluid">
+                                                   <div class="row">
+                                                       <div class="col-md-4">
+                                                           <img src="~/Content/Home/img/noticia.jpg" alt="..." class="img-thumbnail">
+                                                       </div>
+                                                       <div class="col-md-offset-4">
+                                                           <p class="text">La Universidad Tecnológica de La Habana, “José Antonio Echeverría”, Cujae, desarrolla un nuevo proyecto de colaboración con la Universidad Técnica de Manabí en Ecuador, para la creación de la carrera de Ingeniería en Telecomunicaciones. El proyecto responde a la necesidad de crear profesionales más capacitados de manera adecuada, para hacer frente a las exigencias del mundo moderno en materia de telecomunicaciones. </p>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div id="morecsspure-toggled-element">
+                                               <div class="container-fluid">
+                                                   <div class="row">
+                                                       <div class="col-md-4">
+                                                           <img src="~/Content/Home/img/noticia.jpg" alt="..." class="img-thumbnail">
+                                                       </div>
+                                                       <div class="col-md-offset-4">
+                                                           <p class="text">
+                                                               La Universidad Tecnológica de La Habana, “José Antonio Echeverría”, Cujae, desarrolla un nuevo proyecto de colaboración con la Universidad Técnica de Manabí en Ecuador, para la creación de la carrera de Ingeniería en Telecomunicaciones.
+                                                               El proyecto responde a la necesidad de crear profesionales más capacitados de manera adecuada, para hacer frente a las exigencias del mundo moderno en materia de telecomunicaciones.
+                                                               El decano de la Facultad de Telecomunicaciones y Electrónica, de nuestra Universidad, doctor Jorge Torres Gómez explicó en una entrevista concedida sobre el tema, que se están trasladando nuestras experiencias en relación a cómo se imparte y organiza el proceso docente en esa carrera, con el fin de readecuarla a la Universidad Técnica de Manabí.
+                                                               El proyecto pretende facilitar una nueva alternativa para los bachilleres manabitas que hasta el momento han tenido que viajar a otras ciudades del país para estudiar esa carrera.
+                                                           </p>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <label for="morecsspure-element-toggle" id="morecsspure-trigger-toggle"><span style="margin-left: 650px" class="morecsspure-morelink textcolor">Leer mas</span><span style="margin-left: 650px;margin-top:10px;" class="morecsspure-lesslink textcolor">Leer menos</span></label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
+           <section id="price">
+               <div class="container">
+                   <div class="row">
+
+                       <div class="sec-title text-center wow animated fadeInDown">
+                           <h2>Comunidad Universitaria</h2>
+                           <p class="textcolor">Nuestros logros en n&uacute;meros</p>
+                       </div>
+
+                       <div class="col-md-3 wow animated fadeInUp">
+                           <div class="price-table text-center">
+                               <span style="background-color:#1B5E20;color:white"><i class="fa fa-pencil" style="font-size:50px;color:white"></i> Estudiantes</span>
+                               <div class="value" style="background-color:#2E7D32;color:white">
+                                   <span style="color:white">11608</span><br>
+                               </div>
+                               <ul>
+                                   <li style="background-color:#388E3C;color:white">
+                                       @*<i class="fa fa-book" style="font-size:45px;"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white;">Pregrado 7516</p>
+                                   </li>
+                                   <li style="background-color:#43A047;color:white">
+                                       @*<i class="fa fa-mortar-board " style="font-size:45px;"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Postgrado 4092</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.4s">
+                           <div class="price-table text-center">
+                               <span style="background-color:#33691E;color:white"><i class="fa fa-mortar-board " style="font-size:50px;color:white"></i> Postgrado</span>
+                               <div class="value" style="background-color:#558B2F;color:white">
+                                   <span>4092</span><br>
+                               </div>
+                               <ul>
+                                   <li style="background-color:#689F38;color:white">
+                                       @*@<i class="fa fa-institution" style="font-size:45px;font-weight:bold"></i>*@
+                                       <span><p style="font-weight:bold;font-size:15px;color:white">Maestrias 992</span>
+                                   </li>
+                                   <li style="background-color:#7CB342;color:white">
+                                       @*@<i class="fa fa-start-o" style="font-size:45px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white"> Diplomados 323</p>
+                                   </li>
+                                   <li style="background-color:#8BC34A;color:white">
+                                       @*<i class="fa fa-archive" style="font-size:50px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Cursos 2470</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.4s">
+                           <div class="price-table text-center">
+                               <span  style="background-color:#212121;color:white"><i class="fa fa-user " style="font-size:50px"></i> Docentes</span>
+                               <div class="value" style="background-color:#424242;color:white">
+                                   <span>843</span><br>
+                               </div>
+                               <ul>
+                                   <li style="background-color:#616161;color:white">
+                                       @*<i class="fa fa-newspaper-o" style="font-size:45px;font-weight:bold"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Titulares 206
+                                   </li>
+                                   <li style="background-color:#757575;color:white">
+                                       @*<i class="fa fa-plane" style="font-size:45px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Auxiliares 212</p>
+                                   </li>
+                                   <li style="background-color:#9E9E9E;color:white">
+                                       @*<i class="fa fa-plane" style="font-size:50px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Asistentes 231</p>
+                                   </li>
+                                   <li style="background-color:#BDBDBD;color:white">
+                                       @*<i class="fa fa-plane" style="font-size:50px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Instructores 161</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.4s">
+                           <div style="color:white" class="price-table text-center">
+                               <span  style="background-color:#263238;color:white"><i class="fa fa-bar-chart-o " style="font-size:50px"></i> Actualmente</span>
+                               <div class="value"  style="background-color:#37474F;color:white">
+                                   <span>843</span><br>
+                               </div>
+                               <ul>
+                                   <li style="background-color:#455A64;color:white">
+                                       @*<i class="fa fa-institution" style="font-size:45px;font-weight:bold"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Carreras 13
+                                   </li>
+                                   <li  style="background-color:#546E7A;color:white">
+                                       @*<i class="fa fa-plane" style="font-size:45px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;">Especialidades 2</p>
+                                   </li>
+                                   <li  style="background-color:#607D8B;color:white">
+                                       @*<i class="fa fa-plane" style="font-size:50px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Maestr&iacute;as 231</p>
+                                   </li>
+                                   <li style="background-color:#78909C;color:white">
+                                       @*<i class="fa fa-plane" style="font-size:50px"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Lineas de Investigaci&oacute;n 55</p>
+                                   </li>
+                                   <li style="background-color:#90A4AE;color:white">
+                                       @*<i class="fa fa-institution" style="font-size:45px;font-weight:bold"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;color:white">Programas de Doctorado 15
+                                   </li>
+                                   <li style="background-color:#B0BEC5;color:white">
+                                       @*<i class="fa fa-institution" style="font-size:45px;font-weight:bold"></i>*@
+                                       <p style="font-weight:bold;font-size:15px;">Programas de Investigaci&ocirc;n 13
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+
+                <div class="sec-title text-center wow animated fadeInDown">
+                    <h2>Centros de Investigación</h2>
+                </div>
+
+
+                <ul class="project-wrapper wow animated fadeInUp">
+                    <li class="portfolio-item">
+                        <img src="/Content/Home/img/crea.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
+                        <figcaption class="mask">
+                            <h3>CREA</h3>
+                            <p>El Crea, potencia con sus líneas de trabajo los estudios avanzados en el campo de las Ciencias Pedagógicas y  las Ciencias de la Educación, aplicando para ello las Tecnologías de la Información y las Comunicaciones. </p>
+                        </figcaption>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <img src="/Content/Home/img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+                        <figcaption class="mask">
+                            <h3>Wall street</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+                        </figcaption>
+                        <ul class="external">
+                            <li><a class="fancybox" title="Wall street" href="/Content/img/slider/banner.jpg" data-fancybox-group="works"><i class="fa fa-search"></i></a></li>
+                            <li><a href=""><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <img src="/Content/Home/img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+                        <figcaption class="mask">
+                            <h3>Wall street</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+                        </figcaption>
+                        <ul class="external">
+                            <li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="/Content/img/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
+                            <li><a href=""><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <img src="/Content/Home/img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
+                        <figcaption class="mask">
+                            <h3>Wall street</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+                        </figcaption>
+                        <ul class="external">
+                            <li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="/Content/Home/img/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
+                            <li><a href=""><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <img src="/Content/Home/img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+                        <figcaption class="mask">
+                            <h3>Wall street</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+                        </figcaption>
+                        <ul class="external">
+                            <li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="img/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
+                            <li><a href=""><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <img src="/Content/Home/img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+                        <figcaption class="mask">
+                            <h3>Wall street</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+                        </figcaption>
+                        <ul class="external">
+                            <li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="/Content/Home/img/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
+                            <li><a href=""><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+           <section id="service">
+               <div class="container">
+                   <div class="row">
+
+                       <div class="sec-title text-center">
+                           <h2 class="wow animated bounceInLeft">Caracter&Iacute;sticas</h2>
+                           <p class="wow animated bounceInRight textcolor">calidad,excelencia y profesionalismo</p>
+                       </div>
+
+                       <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                           <div class="service-item">
+                               <div class="service-icon">
+                                   <i class="fa fa-pencil-square-o fa-3x"></i>
+                               </div>
+                               <h3>Formaci&oacute;n del Profesional</h3>
+                               <p class="textcolor">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+                           <div class="service-item">
+                               <div class="service-icon">
+                                   <i class="fa fa-flask fa-3x"></i>
+                               </div>
+                               <h3>Ciencia e Innovaci&oacute;n</h3>
+                               <p class="textcolor">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+                           <div class="service-item">
+                               <div class="service-icon">
+                                   <i class="fa fa-mortar-board fa-3x"></i>
+                               </div>
+                               <h3>Postgrado</h3>
+                               <p class="textcolor">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                           </div>
+                       </div>
+
+                       <div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+                           <div class="service-item">
+                               <div class="service-icon">
+                                   <i class="fa fa-university fa-3x"></i>
+                               </div>
+
+                               <h3>Extensi&oacute;n Universitaria</h3>
+                               <p class="textcolor">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+           </section>     
+  
+    @*<section id="testimonials" class="parallax">
+        <div class="overlay" style="background-color:#176d3d;">
+            <div class="container">
+                <div class="row">
+                    <div class="sec-title text-center white wow animated fadeInDown">
+                        <h2>Vida Universitaria</h2>
+                    </div>
+                    <div id="testimonial" class=" wow animated fadeInUp">
+                        <div class="testimonial-item text-center">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="/Content/img/portfolio/item4.jpg" class="thumbnail">
+                                        <div class="caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="/Content/img/portfolio/item4.jpg" class="thumbnail">
+                                        <div class="caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="/Content/img/portfolio/item4.jpg" class="thumbnail">
+                                        <div class="caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="/Content/img/portfolio/item4.jpg" class="thumbnail">
+                                        <div class="caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="/Content/img/portfolio/item4.jpg" class="thumbnail">
+                                        <div class="caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="/Content/img/portfolio/item4.jpg" class="thumbnail">
+                                        <div class="caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+    <section id="social" class="parallax">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+
+                    <div class="sec-title text-center white wow animated fadeInDown">
+                        <h2>AYUDA MUTUA</h2>
+                        <p>Entidades que laboran junto a la CUJAE</p>
+                    </div>
+
+                    <ul class="social-button">
+                        <li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+                        <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-image:url(../../Content/Home/img/joseantonioecheverria.png); background-repeat: no-repeat;background-position: 95%;">
+        <div class="container">
+            <div class="row">
+
+                <div class="sec-title text-center wow animated fadeInDown">
+                    <h2>Contactenos</h2>
+                    <p class="textcolor">Fome parte de nuestro gran familia de acad&eacute;micos</p>
+                </div>
+                <div class="col-md-6 wow animated fadeInRight">
+                    <address class="contact-details">
+                        <h3>CUJAE</h3>
+                        <p class="textcolor"> Universidad Tecnológica de La Habana José Antonio Echeverría</p>
+                        <p class="textcolor"><i class="fa fa-road"></i>Calle 114 NO 11091 <span>Entre Ciclov&iacute;a y Rotonda, Marianao</span><span>La Habana, Cuba</span></p><br>
+                        <p class="textcolor"><i class="fa fa-phone"></i>Phone: (+537) 266 3000 </p>
+                        <p class="textcolor"><i class="fa fa-envelope"></i>info@cujae.edu.cu</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<script>
+</script>
+
+
+ 
+
+      }
+
+  

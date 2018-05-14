@@ -1,0 +1,17 @@
+﻿.resaltar {
+    border: 5px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+    .resaltar:hover {
+        margin-top: 2px;
+    }
+
+    #pic {
+    font-size: 4em;
+    margin-top: 30px;
+}

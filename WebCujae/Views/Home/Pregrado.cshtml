@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Pregrado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section body
+    {
+<main class="site-content" role="main">
+    <!-- Service section -->
+    <section id="service" style="margin-top:10%;">
+        <div class="container">
+            <div class="row">
+                <div class="media">
+                    <div class="media-left media-middle">
+                     
+                            <img class="media-object thumbnail" src="~/Content/img/pregrado.jpg">
+                    </div>
+                    <div class="media-body" style="padding-left:5%">
+                        <div class="sec-title text-center wow animated fadeInDown">
+                            <h2>Pregrado</h2>
+                            <div class="caption">
+                                <p class="text-justify" style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-justify" style="color:black">
+                    @Html.Raw(Session["data"])
+                    </div>
+                <div class="row text-center" style="margin-top:10%">
+                    <div class="container-fluid">
+                        <ul class="list-inline">
+                            <li><img class="img-rounded" src="~/Content/img/list1.jpg"/></li>
+                            <li><img class="img-rounded" src="~/Content/img/list2.jpg" /></li>
+                            <li><img class="img-rounded" src="~/Content/img/list4.jpg" /></li>
+                        </ul>
+                    </div>
+                    </div>  
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio section -->
+    <!-- Testimonial section -->
+    <!-- end Contact section -->
+</main>
+<script>
+
+</script>
+}
+
+
+
+}
+
+
