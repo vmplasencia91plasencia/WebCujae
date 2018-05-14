@@ -1,0 +1,65 @@
+﻿@model WebCujae.Models.CKEditors
+
+@{
+    ViewBag.Title = "AdminPregrado";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section bodyAdmin{
+    <section class="content-header">
+        <h1>
+            Pregrado
+            <small>publique el contenido a mostrar en la secci&oacute;n</small>
+        </h1>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-header with-border">  
+                    </div>
+                    <div class="box-body pad">
+                        @using (Html.BeginForm())
+                        {
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-md-10">
+                                        @Html.TextAreaFor(model => model.data, new { @class = "form-control", @rows = 10, @name = "editor", @cols = 80, @id = "editor1" })
+                                    </div>
+                                </div>
+                                <input type="submit" value="Guardar" class="btn btn-default" />
+                            </div>
+                        }
+                    </div>
+                    <div class="box-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+                <!-- /.box-body -->
+                <!-- /.box-footer-->
+                <!-- /.box-footer-->
+                <!-- Add the sidebar's background. This div must be placed
+                     immediately after the control sidebar -->
+                <div class="control-sidebar-bg"></div>
+                <!-- ./wrapper -->
+                <!-- jQuery 3 -->
+                <script src="/Content/Admin/bower_components/jquery/dist/jquery.min.js"></script>
+                <!-- Bootstrap 3.3.7 -->
+                <script src="/Content/Admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+                <!-- FastClick -->
+                <script src="/Content/Admin/bower_components/fastclick/lib/fastclick.js"></script>
+                <!-- AdminLTE App -->
+                <script src="/Content/Admin/dist/js/adminlte.min.js"></script>
+                <!-- AdminLTE for demo purposes -->
+                <script src="/Content/Admin/dist/js/demo.js"></script>
+                <!-- CK Editor -->
+                <script src="/Content/Admin/bower_components/ckeditor/ckeditor.js"></script>
+                <script>
+                    $(function () {
+                        // Replace the <textarea id="editor1"> with a CKEditor
+                        // instance, using default configuration.
+                        CKEDITOR.replace('editor1')
+                    })
+                </script>
+}

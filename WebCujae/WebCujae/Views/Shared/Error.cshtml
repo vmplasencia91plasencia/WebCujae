@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+    <link rel="stylesheet" href="/Content/Home/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/Home/css/error.css">
+    <link rel="stylesheet" href="/Content/Admin/bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="row">
+            <div class="col-xs-10">
+               <h2> <i style="color:black" class="fa fa-warning"></i> error occurred while processing your request.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10">
+                <p>@ViewBag.errorMessage</p>
+            </div>
+        </div>
+</body>
+</html>

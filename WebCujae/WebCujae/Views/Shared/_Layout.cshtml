@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="/Content/Home/css/font-awesome.min.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="/Content/Home/css/jquery.fancybox.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="/Content/Home/css/bootstrap.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="/Content/Home/css/owl.carousel.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="/Content/Home/css/slit-slider.css">
+    <!-- bootstrap.min -->
+    <link rel="stylesheet" href="/Content/Home/css/animate.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/Content/Home/css/main.css">
+    <link rel="stylesheet" href="/Content/Home/css/noticias.css">
+    <link rel="stylesheet" href="/Content/Home/css/picture.css">
+
+
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="/Content/Home/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body id="body">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="loder-box">
+            <div class="battery"></div>
+        </div>
+    </div>
+    <!-- end preloader -->
+    <!--
+    Fixed Navigation
+    ==================================== -->
+    <header id="navigation" class="navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+                    <!-- logo -->
+                    <img src="~/Content/Home/img/test.jpg" style="height:120px" a class="navbar-brand img-circle " />
+                    <!--  <a href="#body">Blue</a>-->
+                    <!-- /logo -->
+                </div>
+
+                <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation" style="margin-top:3%;">
+                          <div class="footer-social">
+                        <ul>
+                            <li class="wow animated zoomIn iconwhite">@Html.ActionLink(" ", "Login", "Account", null, new { @class = "fa fa-cog fa-2x" })</li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Estudio</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("Pregrado", "Pregrado", "Home", null, null)</li>
+                                <li><a href="#">Postgrado</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Investigacion </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Publicaciones</a></li>
+                                <li><a href="#">Lineas de Investigaci&oacute;n</a></li>
+                                <li><a href="#">Proyectos de Investigaci&oacute;n</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Cooperaci&oacute;n</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vida Universitaria </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Eventos deportivos</a></li>
+                                <li><a href="#">Cultura</a></li>
+                                <li><a href="#">Recreaci&oacute;n</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Internacional</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Proyectos</a></li>
+                                <li><a href="#">Intercambios</a></li>
+                                <li><a href="#">Conferencias y capacitaciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- /main nav -->
+
+        </div>
+    </header>
+    }
+    <!--
+    End Fixed Navigation
+    ==================================== -->
+
+    @RenderSection("body",required:false)
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="footer-content">
+                    <div class="wow animated fadeInDown">
+                        <p>VISITENOS</p>
+                        <p>Forme parte de nosotros</p>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li class="wow animated zoomIn iconwhite"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn iconwhite" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <p>Design And developed By Victor Plasencia Costales Web develop<br /><center>All rights Reserved</center></p>
+                </div>
+            </div>
+            <!--Boton hacia arriba-->
+            <a class="ir-arriba" title="Volver arriba" style="margin-left: 1200px;color:rgb(23, 109, 61);">
+                <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+    </footer>
+    <!-- Essential jQuery Plugins
+    ================================================== -->
+    <!-- Main jQuery -->
+    <script src="/Content/Home/js/jquery-1.11.1.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script src="/Content/Home/js/bootstrap.min.js"></script>
+    <!-- Single Page Nav -->
+    <script src="/Content/Home/js/jquery.singlePageNav.min.js"></script>
+    <!-- jquery.fancybox.pack -->
+    <script src="/Content/Home/js/jquery.fancybox.pack.js"></script>
+    <!-- Google Map API -->
+    <!-- Owl Carousel -->
+    <script src="/Content/Home/js/owl.carousel.min.js"></script>
+    <!-- jquery easing -->
+    <script src="/Content/Home/js/jquery.easing.min.js"></script>
+    <!-- Fullscreen slider -->
+    <script src="/Content/Home/js/jquery.slitslider.js"></script>
+    <script src="/Content/Home/js/jquery.ba-cond.min.js"></script>
+    <!-- onscroll animation -->
+    <script src="/Content/Home/js/wow.min.js"></script>
+    <!-- Custom Functions -->
+    <script src="/Content/Home/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /*********************************************** boton hacia arriba **********************************************/
+            $('.ir-arriba').click(function () {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 1000);
+            });
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.ir-arriba').slideDown(100);
+                } else {
+                    $('.ir-arriba').slideUp(100);
+                }
+            });
+
+            /*hacia abajo*/
+            $('.ir-abajo').click(function () {
+                $('body, html').animate({
+                    scrollTop: '1000px'
+                }, 1000);
+            });
+
+        });
+        /*Hover en la Barra de Navegacion*/
+        $('ul.nav li.dropdown').hover(function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+
+    </script>
+    @RenderBody()
+</body>
+</html>
